@@ -1,0 +1,22 @@
+.background {
+  background: url('./images/hybridbox1z2r16-9.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.break {
+  position: relative;
+  background-color: goldenrod;
+  width: 100%;
+  height: 50%;
+  display: block;
+  text-align: center;
+}
+
+.spacer {
+  height: 500px;
+}
