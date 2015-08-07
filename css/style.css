@@ -1,3 +1,9 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 .background {
   background: url('./images/hybridbox1z2r16-9.png');
   width: 100%;
@@ -6,17 +12,116 @@
   top: 0;
   left: 0;
   position: fixed;
+  /*padding: 0;*/
+}
+
+.backgroundAux {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*background-size: cover;*/
+  /*background-attachment: local;*/
+/*  top: 0;
+  left: 0;*/
+  background: linear-gradient(45deg, rgba(0,0,0,1), white 30%, white 70%, rgba(0,0,0,0));
+}
+
+.movingBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  border: 5px solid grey;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0), red, rgba(0,0,0,0), red, rgba(0,0,0,0), red);
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  border: 5px solid grey;
+  text-align: center;
+  background: linear-gradient(0deg, blue, rgba(0,0,0,0), blue, rgba(0,0,0,0), blue, rgba(0,0,0,0), blue);
+}
+
+.head1 {
+  position: relative;
+  /*background-color: goldenrod;*/
+  /*border-radius: 30px;*/
+  background: linear-gradient(0deg, rgba(0,0,0,0), white 70%, rgba(0,0,0,0));
+  width: 100%;
+  height: 400px;
+  display: block;
+  text-align: center;
+  opacity: 1;
+  border: 5px solid green;
+}
+
+.head2 {
+  position: relative;
+  /*background-color: goldenrod;*/
+  /*border-radius: 30px;*/
+  background: linear-gradient(90deg, rgba(0,0,0,1), white 30%, white 70%, rgba(0,0,0,0));
+  width: 100%;
+  height: 400px;
+  display: block;
+  text-align: center;
+  opacity: .5;
+  border: 5px solid blue;
 }
 
 .break {
   position: relative;
-  background-color: goldenrod;
+  display: block;
+  /*background-color: goldenrod;*/
+  /*border-radius: 30px;*/
+  background: radial-gradient(goldenrod 40%, white, rgba(0,0,0,0) 70%);
   width: 100%;
   height: 50%;
   display: block;
   text-align: center;
+  opacity: .8;
+  border: 5px solid white;
+}
+
+.brtext {
+  opacity: 1;
+  margin: 30px;
 }
 
 .spacer {
-  height: 500px;
+  position: relative;
+  display: block;
+  height: 250px;
+  padding: 10px;
+  margin: 0px;
+  border: 5px solid black;
+    perspective: 200px;
+    /*perspective-origin: 50px 75%;*/
+}
+
+.rolladex {
+  position: relative;
+  border: 5px solid red;
+  height: 300px;
+  width: 90%;
+  margin: 50px;
+  background-color: goldenrod;
+  transform: rotateX(90deg);
+  transform-origin: 50% 50% -200px;
+}
+
+#altered {
+  position: relative;
+  border: 5px solid red;
+  height: 300px;
+  width: 90%;
+  margin: 50px;
+  background-color: goldenrod;
+  transform: rotateX(90deg);
+  transform-origin: 50% 50% -200px;
 }
