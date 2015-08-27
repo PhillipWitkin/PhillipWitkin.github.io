@@ -70,28 +70,31 @@ $(".nav-list-item").mouseout(function(event){
   shrink(hoverElement)
 })
 
-$('[data-role="nav"]').click(function(){
-  var target = $(this).attr('data-target')
-  // console.log(target)
-  $('.current').fadeOut(700, function(){
-    $(this).removeClass('current')
-    $(window).scrollTop(0) 
-    $('#' + target + '').fadeIn(700, function(){
-      $(this).addClass('current')
-    })
-  })
-})
-
-// $('[data-target="projects"]').click(function(){
-//   // var target = $(this).attr('data-target')
+// $('[data-role="nav"]').click(function(){
+//   var target = $(this).attr('data-target')
 //   // console.log(target)
-//   $('.current').fadeOut(500, function(){
+//   $('.current').fadeOut(700, function(){
 //     $(this).removeClass('current')
-//     $('#projects').fadeIn(500, function(){
+//     // $(window).scrollTop(0) 
+//     $('#' + target + '').fadeIn(700, function(){
 //       $(this).addClass('current')
 //     })
 //   })
 // })
+
+$('[data-role="nav"]').click(function(){
+  var target = $(this).attr('data-target')
+  // console.log(target)
+  $('.current').hide()
+  $('#' + target + '').show()
+  $('#' + target + '').addClass('.current')
+  // $('.current').fadeOut(500, function(){
+  //   $(this).removeClass('current')
+  //   $('#projects').fadeIn(500, function(){
+  //     $(this).addClass('current')
+  //   })
+  // })
+})
 
 function enlarge(el){
   $(el).animate({ 'font-size': '28px'}, 400)
