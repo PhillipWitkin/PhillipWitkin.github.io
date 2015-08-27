@@ -64,6 +64,16 @@ nav  a:visited {
   /*z-index: 3;*/
 }
 
+.nav-list-item-nogrow {
+  /*align-content: center;*/
+  font-family: 'Montserrat';
+  margin: 2.5rem;
+  color: white;
+  display: inline;
+  vertical-align: middle;
+  /*z-index: 3;*/
+}
+
 .shadow-in {
   /*color: white;*/
   /*background-color: rgba(0, 0, 0, .5);*/
