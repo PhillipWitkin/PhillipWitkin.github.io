@@ -75,7 +75,7 @@ $('[data-role="nav"]').click(function(){
   // console.log(target)
   $('.current').fadeOut(700, function(){
     $(this).removeClass('current')
-    $(window).scrollTop(0)
+    $(window).scrollTop(0) 
     $('#' + target + '').fadeIn(700, function(){
       $(this).addClass('current')
     })

@@ -10,6 +10,17 @@ img {
   height: auto;
 }
 
+nav  a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav  a:visited {
+  /*color: rgba(255,255,255,0.5);*/
+  color: lightgrey;
+  text-decoration: none;
+}
+
 
 .hidden {
   display: none;
@@ -92,8 +103,39 @@ img {
 
 #github{
   position: relative;
-  left: 8em;
-  font-size: 20px;
+  left: 10em;
+  font-family: "Montserrat";
+  font-size: 25px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#github > a:link{
+  color: black;
+}
+
+#devcons-frontend{
+  position: relative;
+  left: 12em;
+  /*margin-bottom: 1em;*/
+}
+
+#devcons-backend{
+  position: relative;
+  left: 7em;
+}
+
+#devcons-frontend > img {
+  margin: 1em;
+}
+
+#devcons-backend > img {
+  margin: 1em;
+}
+
+.project-pics {
+  position: relative;
+  left: 10em;
 }
 
 .backgroundAux {
