@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>-->
+  <title> Phillip Witkin Personal site </title>
+    <script type="text/javascript" src="./javascript/scripts/libs/three.js"></script>
 
-  <script src="./javascript/scripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="./javascript/scripts/libs/stats.js"></script>
+    <script type="text/javascript" src="./javascript/scripts/libs/dat.gui.js"></script>
+    <script type="text/javascript" src="./javascript/scripts/libs/tween.min.js"></script>
 
-  <link href="./css/style.css" rel="stylesheet">
+    <script src="./javascript/scripts/jquery-1.11.3.js"></script>
 
-  <meta charset="UTF-8">
-  <title>Phillip Witkin Personal Site Home</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-  <div class="background">
-  </div>
 
-  <!-- <div id="droplet"></div> -->
-  <div class="movingBackground">
-    <div class="mask">
-    </div>
-  </div>
-    
+<!-- Div which will hold the Output -->
+<div id="WebGL-output" class="background"></div>
+
+<div id="Stats-output">
+</div>
+
+<div class="navbar">
+  <ul id="nav-links">
+    <li class="nav-list-item"><a data-target="home" data-role="nav" href="#"> About Home </a></li>
+    <li class="nav-list-item"><a data-target="projects" data-role="nav" href="#projects"> Projects </a></li>
+    <li class="nav-list-item"> Background </li>
+    <!-- <li class="nav-list-item"> Fractal Art </li> -->
+  </ul>
+</div>
+
+<div class="spacer-small"></div>
+
   <div class="head1">
     <div class="head2">
-      <h1> Personal Site Coming Soon...</h1>
+      <div class="header-text">
+      <p id="name-text"> Phillip A. Witkin</p>
+      <p id="title-text"> Web Developer</p>
+      </div>
+    </div>
+  </div>
+
+
+<div id="home" class="section-content current">
+
+  <div class="spacer"></div>
+
+  <div class="shadow-out">
+    <div class="shadow-in">
+      <p class="section-header"> About Me </p>
+      <p class="section-text">
+      Hi, my name is Phillip Witkin and I'm a full-stack Web Developer. When I'm not coding, I love listening to and playing music - my favorite instrument is the B3 organ, but I enjoy keyboards and synthesizers of all types, as well as the bass guitar. I'm also an avid reader of philosophy, both anayltic and continental, and there are few things I enjoy more than an engaging discussion.  
+      </p>
     </div>
   </div>
 
   <div class="spacer"></div>
+
+  <div class="shadow-out">
+    <div class="shadow-in">
+      <p class="section-header"> Skills </p>
+      <div>
+        <img height="200" width="200" src="http://swebgineering.com/img/icon_rails.png">
+        <img height="200" width="200" src="http://appv2.asustor.com/uploadIcons/0020_999_1373612393_Ruby512.png">
+      </div>
+      <p class="section-text">
+      I have also become quite fond of the Backbone.js library for client-side Javascript, but as a full-stack developer I am always looking to expand my repetoire of languages, frameworks and libraries. 
+ <!--      I love experimentation with new technologies as Web Development continues to evolve. -->
+      </p>
+    </div>
+  </div>
+
   <div class="spacer"></div>
 
-  <div class="spacer">
-    <div class="rolladex" id="altered1">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="shadow-out">
+    <div class="shadow-in">
+      <p class="section-header"> ...And More </p>
+      <p class="section-text">
+      Please check out the <span><a data-target="projects" data-role="nav" href="#projects"> Projects </a></span> section   for some of my work. 
+      <!-- </p> -->
+  <!--     <br>
+      And if your interested (for whatever reason) in learning more about me, check out the Background section. -->
+      <!-- <p class="section-text"> -->
+      <br>
+      <br>
+      Think I might be a good match for a project? Wan't to show me the latest and greatest Web Developement technology, or some other fantastic human acheivement? Or just wanna talk about philosophy? Send me an email:
+      <br>
+      <br>
+      Phillip Witkin
+      <br>
+      pwitkin273@gmail.com   
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+</div>
+
+
+<div id="projects" class="hidden section-content">
+
+  <div class="spacer"></div>
+
+  <div class="shadow-out">
+    <div class="shadow-in">
+      <div id="github">
+        <img src="./css/images/GitHub-Mark/PNG/GitHub-Mark-64px.png" alt="GitHub logo" height="60" width="60">
+        <div class="image-link">
+        <p> Feel free to check out my GitHub Repo:</p>
+        <a href="https://github.com/PhillipWitkin">GitHub.com/PhillipWitkin</a> 
+        </div>
+      </div>
     </div>
   </div>
 
@@ -54,35 +127,11 @@
     </div>
   </div>
 
-  <div class="spacer">
-    <div class="rolladex" id="altered2">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
+</div>
 
-  <div class="break">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
 
-  </div>
-  <div class="spacer">
-    <div class="rolladex">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>   
-  <!-- </div> -->
-  
 
 </body>
-  <script src="./javascript/app.js"></script>
-</html> 
+  <script src="./javascript/background.js"></script>
+  <script src="./javascript/app3d.js"></script>
+</html>
