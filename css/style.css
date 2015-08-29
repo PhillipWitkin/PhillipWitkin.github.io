@@ -82,8 +82,10 @@ nav  a:visited {
   display: block;
   background: linear-gradient(rgba(0,50,150,0.3), rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,50,150,0.3));
   /*height: 250px;*/
-  padding: 10px;
+  width: 100%;
+  /*padding: 10px;*/
   margin: 0px;
+  z-index: 3;
   /*border: 5px solid pink;*/
   /*box-shadow: 0px 0px 50px 20px rgba(1, 1, 1, .5) inset;*/
 }
@@ -93,13 +95,14 @@ nav  a:visited {
   background-color: rgba(255, 250, 240, .825);
   /*height: 50%;*/
   position: relative;
+  width: 100%;
   display: block;
   /*height: 250px;*/
   /*padding: 10px;*/
   margin: 0px;
   /*border: 5px solid pink;*/
   box-shadow: 0px 0px 20px 15px rgba(255, 250, 240, .825);
-  z-index: 2
+  z-index: 2;
 }
 
 .image-link{
@@ -113,11 +116,11 @@ nav  a:visited {
 
 #github{
   position: relative;
-  left: 10em;
+  padding-left: 10em;
   font-family: "Montserrat";
   font-size: 25px;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 #github > a:link{
@@ -126,13 +129,16 @@ nav  a:visited {
 
 #devcons-frontend{
   position: relative;
-  left: 12em;
-  /*margin-bottom: 1em;*/
+  /*width: 100%;*/
+  padding-left: 5rem;
+  padding-bottom: 2em;
 }
 
 #devcons-backend{
   position: relative;
-  left: 7em;
+  /*width: 100%;*/
+  padding-left: 10rem;
+  /*margin-bottom: 1em;*/
 }
 
 #devcons-frontend > img {
@@ -145,7 +151,8 @@ nav  a:visited {
 
 .project-pics {
   position: relative;
-  left: 10em;
+  /*width: 80%;*/
+  /*left: 10em;*/
 }
 
 .backgroundAux {
@@ -231,7 +238,9 @@ nav  a:visited {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  padding-top: 0.75em;
 }
 
 .section-text {
@@ -262,9 +271,9 @@ nav  a:visited {
 }
 
 .spacer {
-  position: relative;
+  /*position: relative;*/
   display: block;
-  height: 200px;
+  height: 210px;
   padding: 10px;
   margin: 0px;
   /*border: 5px solid pink;*/
@@ -275,7 +284,7 @@ nav  a:visited {
 .spacer-small {
   position: relative;
   display: block;
-  height: 80px;
+  height: 110px;
   /*padding: 10px;*/
   margin: 0px;
   /*border: 5px solid pink;*/

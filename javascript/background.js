@@ -43,7 +43,7 @@ window.background = (function(){
   }
 
   function populateWithShapes(){
-    var shapeNumber = 500
+    var shapeNumber = 600
     for (var i=0; i < shapeNumber; i++){
       var newShape = createShape(.4)
       newShape.position.x = getRandomInt(-100, 100)

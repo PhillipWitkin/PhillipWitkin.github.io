@@ -39,7 +39,7 @@ window.onload = (function(){
 $(window).on('scroll', function(event){
   var scrollPos = $(window).scrollTop()
   var scrollPercent = scrollPos / (document.body.clientHeight - $(window).height())
-  var cameraMax = 40
+  var cameraMax = 43
   var cameraMin = 23
   // move the camera for parallx effect
   background.camera.position.y = -(cameraMax - cameraMin)*scrollPercent + cameraMin
