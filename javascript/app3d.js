@@ -44,7 +44,7 @@ $(window).on('scroll', function(event){
   // move the camera for parallx effect
   background.camera.position.y = -(cameraMax - cameraMin)*scrollPercent + cameraMin
   
-  background.cube.rotation.x = -scrollPos/300
+  background.cube.rotation.x = scrollPos/300
 
   // background.render()
   // var oldRotation = {rotation: cube.rotation.x}
