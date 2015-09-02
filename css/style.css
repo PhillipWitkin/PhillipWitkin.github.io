@@ -152,9 +152,10 @@ nav  a:visited {
 }
 
 .project-pics {
-  position: relative;
+  /*position: relative;*/
   /*width: 80%;*/
-  padding-left: 15%;
+  padding-left: 10%;
+  /*padding-right: 10%;*/
 }
 
 .backgroundAux {
@@ -259,9 +260,9 @@ nav  a:visited {
 .section-text {
   font-family: 'Montserrat';
   font-size: 25px;
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 1em;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2em;
 }
 
 .break {

@@ -166,7 +166,7 @@ window.background = (function(){
     stats.update()
     // scene.traverse(function(e){
     //   if (e instanceof THREE.Mesh && e !== plane){
-        cube.rotation.z -= .005        
+        cube.rotation.z -= .0037        
     //   }
     // })
 
