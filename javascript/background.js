@@ -193,6 +193,16 @@ window.background = (function(){
     return stats  
   }
 
+  function onResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
+    // listen to the resize events
+  window.addEventListener('resize', onResize, false);
+
+
+
   function getRandomInt(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min
   }
