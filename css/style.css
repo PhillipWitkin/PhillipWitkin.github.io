@@ -2,6 +2,8 @@ html, body {
   padding: 0px;
   margin: 0px;
   border: 0px;
+/*  width: 100%;
+  height: 100%;*/
   /*overflow: hidden;*/
 }
 
@@ -116,7 +118,7 @@ nav  a:visited {
 
 #github{
   position: relative;
-  padding-left: 10em;
+  padding-left: 20%;
   font-family: "Montserrat";
   font-size: 25px;
   padding-top: 3em;
@@ -130,14 +132,14 @@ nav  a:visited {
 #devcons-frontend{
   position: relative;
   /*width: 100%;*/
-  padding-left: 5rem;
+  padding-left: 5%;
   padding-bottom: 2em;
 }
 
 #devcons-backend{
   position: relative;
   /*width: 100%;*/
-  padding-left: 10rem;
+  padding-left: 15%;
   /*margin-bottom: 1em;*/
 }
 
@@ -152,7 +154,7 @@ nav  a:visited {
 .project-pics {
   position: relative;
   /*width: 80%;*/
-  padding-left: 10em;
+  padding-left: 15%;
 }
 
 .backgroundAux {
@@ -168,7 +170,6 @@ nav  a:visited {
 
 
 .head1 {
-
   position: relative;
   /*top: -10px;*/
   /*background-color: goldenrod;*/
@@ -231,6 +232,18 @@ nav  a:visited {
   font-family: 'Montserrat';
   text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
   font-weight: 600;
+}
+
+#portrait {
+  /*position: relative;*/
+  background: url(./images/PhilwHeadshot2.png);
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  background-size: 146px 200px;
+  width: 146px;
+  height: 170px;
+  margin-left: 43%;
+  border-radius: 30%;
 }
 
 .section-header {

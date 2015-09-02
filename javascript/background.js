@@ -48,7 +48,7 @@ window.background = (function(){
       var newShape = createShape(.4)
       newShape.position.x = getRandomInt(-100, 100)
       newShape.position.y = getRandomInt(-20, 50)
-      newShape.position.z = getRandomInt(-180, -10)
+      newShape.position.z = getRandomInt(-140, -10)
     }
   }
 
@@ -68,7 +68,7 @@ window.background = (function(){
         meshMaterial.side = THREE.DoubleSide;
         var wireFrameMat = new THREE.MeshDepthMaterial();
         wireFrameMat.wireframe = true;
-        wireFrameMat.wireframeLinewidth = 2
+        wireFrameMat.wireframeLinewidth = 2.5
 
             // create a multimaterial
         var mesh = THREE.SceneUtils.createMultiMaterialObject(geom, [meshMaterial, wireFrameMat]);
@@ -113,7 +113,7 @@ window.background = (function(){
 
         // position the cube
   cube.position.x = 0;
-  cube.position.y = 10;
+  cube.position.y = 9.5;
   cube.position.z = 0;
   
   // return cube

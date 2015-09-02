@@ -84,8 +84,10 @@ $(".nav-list-item").mouseout(function(event){
 
 $('[data-role="nav"]').click(function(){
   var target = $(this).attr('data-target')
-  // console.log(target)
-  $('.current').hide()
+  console.log(target)
+  $('#home').hide()
+  $('#projects').hide()
+  $('.current').removeClass('.current')
   $('#' + target + '').show()
   $('#' + target + '').addClass('.current')
   // $('.current').fadeOut(500, function(){
