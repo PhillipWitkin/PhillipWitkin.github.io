@@ -131,14 +131,16 @@ nav  a:visited {
 
 #devcons-frontend{
   position: relative;
-  /*width: 100%;*/
-  padding-left: 5%;
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
   padding-bottom: 2em;
 }
 
 #devcons-backend{
   position: relative;
-  /*width: 100%;*/
+  width: 80%;
+  height: 80%;
   padding-left: 15%;
   /*margin-bottom: 1em;*/
 }
