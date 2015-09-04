@@ -87,6 +87,7 @@ $('[data-role="nav"]').click(function(){
   console.log(target)
   $('#about').hide()
   $('#projects').hide()
+  $('#fractal-art').hide()
   $('.current').removeClass('.current')
   $('#' + target + '').show()
   if (target === 'home'){

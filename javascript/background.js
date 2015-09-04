@@ -109,12 +109,25 @@ window.background = (function(){
   // var cubeMaterial = new THREE.MeshPhongMaterial({color: 0xff3333, blending: THREE.MultiplyBlending});
   // var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
   var cube = createMesh(new THREE.IcosahedronGeometry(11,0))
-  cube.castShadow = true;
+  // cube.castShadow = true;
 
         // position the cube
   cube.position.x = 0;
-  cube.position.y = 9.5;
+  cube.position.y = 9.7;
   cube.position.z = 0;
+
+  // var tetrahedron1 = createMesh(new THREE.OctahedronGeometry(5,0))
+  // tetrahedron1.position.x = -20
+  // tetrahedron1.position.y = 10
+  // tetrahedron1.position.z = -10
+  
+  // var tetrahedron2 = createMesh(new THREE.OctahedronGeometry(5,0))
+  // tetrahedron2.position.x = 20
+  // tetrahedron2.position.y = 10
+  // tetrahedron2.position.z = -10
+
+  // scene.add(tetrahedron1)
+  // scene.add(tetrahedron2)
   
   // return cube
   // }
@@ -166,7 +179,10 @@ window.background = (function(){
     stats.update()
     // scene.traverse(function(e){
     //   if (e instanceof THREE.Mesh && e !== plane){
-        cube.rotation.z -= .0037        
+      cube.rotation.z -= .0037
+
+      // tetrahedron1.rotation.y += .0037
+      // tetrahedron2.rotation.y -= .0037       
     //   }
     // })
 
